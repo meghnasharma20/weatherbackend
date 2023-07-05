@@ -1,0 +1,10 @@
+{
+    "intrnlSrvrErr": {
+        "code": 500,
+        "msg": "Please try after some time."
+    },
+    "parameterMissing" : {
+        "code" : 400,
+        "msg" : "Please provide all required details"
+    }
+}
