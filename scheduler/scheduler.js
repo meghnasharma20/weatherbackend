@@ -7,7 +7,7 @@ let workerName = 'news'
 
 console.log("scheduler intialised..")
 
-scheduler.scheduleJob({minute : 38},()=>{
+scheduler.scheduleJob({minute : 50},()=>{
     if(workerName === 'news'){
         fetchNewsData(cities)
         workerName= 'weather'

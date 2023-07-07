@@ -33,20 +33,8 @@ const addNews = async (params, callback) => {
   }
 };
 
-const getNewsTest = async()=>{
- const query =  {
-  createdAt : {
-    '$gte' : moment(new Date('2023-30-06'))
-  },
-  cityname : {
-    '$or' : ['delhi','pune']
-  }
-}
-  const result = await newsModal.find(query)
-  console.log("my result is",result)
-}
+
  const getNews = async(params,callback)=>{
-  getNewsTest()
   let result = undefined;
   let error = undefined;
   /**
@@ -88,5 +76,4 @@ module.exports = {
   addNews,
   getNews,
   addNewsList,
-  getNewsTest
 };
