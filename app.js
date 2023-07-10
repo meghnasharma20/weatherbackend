@@ -18,6 +18,4 @@ config.dbConfig(config.envConfig, (error) => {
       return console.log(error);
     }
     console.log("server is up and running on port..." + port);
-  });
-
-});
+  })});

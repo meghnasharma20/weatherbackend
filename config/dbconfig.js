@@ -6,7 +6,7 @@ const dbname = env.mongo.dbName;
 const url = env.mongo.dbUrl;
 const dburl = url + dbname;
 const dockerurl ="mongodb://mongo:27017/docker-node-mongo";
-mongoose.connect(dockerurl).then((res)=>{
+mongoose.connect(dburl).then((res)=>{
     console.log("db connected successfully..")
     callback();
 }).catch((e)=>{
